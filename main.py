@@ -1,10 +1,10 @@
-import understandingimport
+import understanding_import
 
-def importingmodules():
-    understandingimport.start()
+def importing_modules():
+    understanding_import.start()
 
 switcher = {
-    1: importingmodules
+    1: importing_modules
 }
 
 def start():
@@ -13,8 +13,8 @@ def start():
         print(" 1. Importing Modules")
 
         ch = input("Enter choice : ")
-        callmethod = switcher.get(int(ch), lambda: print('Invalid'))
-        callmethod()
+        call_method = switcher.get(int(ch), lambda: print('Invalid'))
+        call_method()
 
 if __name__ == "__main__":
     start()
