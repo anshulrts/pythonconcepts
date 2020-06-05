@@ -11,6 +11,7 @@ import module1
 # defined, so X.name doesn’t work. And if name was already defined, it is replaced by the
 # new version. And if name in X is changed to point to some other object, your module won’t
 # notice.
+# This is usually not recommended as you might fill the local symbol table en masse
 from module2 import *
 
 # from X import a, b, c imports the module X, and creates references in the current
