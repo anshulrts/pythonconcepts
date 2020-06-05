@@ -1,11 +1,11 @@
 import understanding_import
-import global_local_variable
+import global_local_package.global_local_variable
 
 def importing_modules():
     understanding_import.start()
 
 def global_local():
-    global_local_variable.start()
+    global_local_package.global_local_variable.start()
 
 switcher = {
     1: importing_modules,
