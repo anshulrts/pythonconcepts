@@ -29,3 +29,15 @@ print(f"Length of string1 is : {len(string1)}")
 print(f"First Character is : {string1[0]}")
 # Negative Indexing
 print(f"Last Character is : {string1[-1]}")
+
+# In Python, you can pack & unpack tuples.
+# Eg
+s1 = 1
+s2 = 2
+s3 = 3
+s4 = 4
+tt = (s1, s2, s3, s4)
+print(tt)
+
+(x, y, z, a) = tt
+print(x)
