@@ -115,7 +115,10 @@ even_nums = list(filter(check_even, numbers))
 print(even_nums)
 
 # 8. lambda
-# In the above example, instead of defining check_even, you can directly define a lambda func
+# With map & filter functions, you can use lambda instead of writing the function.
+# In the above example, instead of defining check_even, you can directly define a
+# lambda func
 # Eg
 print(list(filter(lambda i: i%2==0, numbers)))
+
 
