@@ -121,4 +121,6 @@ print(even_nums)
 # Eg
 print(list(filter(lambda i: i%2==0, numbers)))
 
+# 9. next() and iter()
+
 
