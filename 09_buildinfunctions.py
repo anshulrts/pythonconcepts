@@ -122,5 +122,36 @@ print(even_nums)
 print(list(filter(lambda i: i%2==0, numbers)))
 
 # 9. next() and iter()
+# Iterators are methods that iterate collections like lists, tuples, etc.
+# Using an iterator method, we can loop through an object and return its elements.
+# Technically, a Python iterator object must implement two special methods,
+# __iter__() and __next__(), collectively called the iterator protocol.
 
+# In Python, we can use the next() function to return the next item in the sequence.
+
+# Eg
+# define a list
+my_list = [4, 7, 0]
+# create an iterator from the list
+iterator = iter(my_list)
+# get the first element of the iterator
+print(next(iterator))  # prints 4
+# get the second element of the iterator
+print(next(iterator))  # prints 7
+# get the third element of the iterator
+print(next(iterator))  # prints 0
+# print(next(iterator))  throws StopIteration Exception
+
+# The syntax of next() is:
+# next(iterator, default)
+# iterator - next() retrieves next item from the iterator
+# default (optional) - this value is returned if the iterator is exhausted (there is no next item)
+
+# We can add conditions to next()
+# Eg
+nums = [-4,-1,0,4]
+try:
+  x = next(x for x, val in enumerate(nums) if val >= 0)
+except StopIteration as e:
+  x = 0
 
