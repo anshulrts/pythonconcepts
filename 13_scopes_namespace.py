@@ -27,6 +27,8 @@
 # built-in namespace with the following command:
 
 print(dir(__builtins__))
+# The Python interpreter creates the built-in namespace when it starts up.
+# This namespace remains in existence until the interpreter terminates.
 
 
 
