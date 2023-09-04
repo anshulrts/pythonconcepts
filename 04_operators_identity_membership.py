@@ -13,10 +13,10 @@ y2 = 'abc'
 x3 = [1,2,3]
 y3 = [1,2,3]
 
-print(x1 is y1)
-print(x2 is y2)
-print(x3 is y3)
-print(x3 == y3)
+print(x1 is y1) # True
+print(x2 is y2) # True
+print(x3 is y3) # False
+print(x3 == y3) # True
 # x3 and y3 are lists. They are equal but not identical.
 # It is because the interpreter locates them separately in memory although they are equal.
 
