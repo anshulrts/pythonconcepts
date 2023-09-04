@@ -11,26 +11,28 @@
 x = "Happy New Year"
 y = "2023"
 
-print(x)
-print(y)
-# In the above example, the print() statement only includes the object to be printed. Here, the value for end is not used. Hence, it takes the default value '\n'.
+print(x) # Happy New Year
+print(y) # 2023
+# In the above example, the print() statement only includes the object to be printed.
+# Here, the value for end is not used. Hence, it takes the default value '\n'.
 # So we get the output in two different lines.
 
 print(x, end=' ')
 print(y)
+# Happy New Year 2023
 
-print(x, y, "###",sep='! ')
+print(x, y, "###",sep='! ') # Happy New Year! 2023! ###
 
 
 
 # Concatenate String
-print(x + " " + y)
+print(x + " " + y) # Happy New Year 2023
 
 
 
 # Python Input
 prompt = "Enter a number "
 abc = input(prompt)
-print(type(abc))
+print(type(abc)) # <class 'str'>
 xyz = int(abc) # You get ValueError here if you didn't enter an integer
-print(type(xyz))
+print(type(xyz)) # <class 'int'>
