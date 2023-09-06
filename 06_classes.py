@@ -19,16 +19,16 @@ class Circle:
 circle_1 = Circle(42)
 circle_2 = Circle(7)
 
-print(circle_1)
-print(circle_2)
+print(circle_1) # <__main__.Circle object at 0x000001CEE0A2EFD0>
+print(circle_2) # <__main__.Circle object at 0x000001CEE0A2EF70>
 
-print(circle_1.radius)
-print(circle_1.calculate_area())
+print(circle_1.radius) # 42
+print(circle_1.calculate_area()) # 5541.77
 
-print(circle_2.radius)
-print(circle_2.calculate_area())
+print(circle_2.radius) # 7
+print(circle_2.calculate_area()) # 153.94
 
 # Can change its value from outside
 circle_1.radius = 40
-print(circle_1.radius)
-print(circle_1.calculate_area())
+print(circle_1.radius) # 40
+print(circle_1.calculate_area()) # 5026.55
