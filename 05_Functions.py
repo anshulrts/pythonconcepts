@@ -1,6 +1,6 @@
 # Functions in Python start with def keyword
 # The return value of a Python function can be any object.
-# Everything in python is an object. So you functions can return numeric, collections, user
+# Everything in python is an object. So your functions can return numeric, collections, user
 # defined objects, classes, functions even modules & packages.
 # They always return a value, even if you don't specify a return statement
 
@@ -14,9 +14,9 @@ def returnmultiple():
     return 1, 2, 3
 
 desc = returnmultiple()
-print(desc)
+print(desc) # (1, 2, 3)
 # desc becomes a tuple here storing all 3 values
 
 a, b, c = returnmultiple()
-print(a,b,c)
+print(a,b,c) # 1 2 3
 # This concept of unpacking in 3 variables is called a iterable unpacking.

@@ -5,7 +5,7 @@
 
 def outer_func():
     def inner_func():
-        print("Hello World")
+        print("Hello World") # Hello World
     inner_func()
 
 outer_func()
@@ -16,7 +16,7 @@ outer_func()
 
 def out_func(who):
     def inn_func():
-        print(f"Hello, {who}")
+        print(f"Hello, {who}") # Hello, NY
     inn_func()
 
 out_func("NY")

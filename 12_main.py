@@ -11,7 +11,7 @@
 
 from time import sleep
 
-print("This is my file to demonstrate best practices.")
+print("This is my file to demonstrate best practices.") # This is my file to demonstrate best practices.
 
 def process_data(data):
     print("Begin Processing...")
@@ -22,9 +22,9 @@ def process_data(data):
 
 def main():
     data = "My data read from the web"
-    print(data)
+    print(data) # My data read from the web
     modified_data = process_data(data)
-    print(modified_data)
+    print(modified_data) # My data read from the web that has been modified
 
 if __name__ == '__main__':
     main()

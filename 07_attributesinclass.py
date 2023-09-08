@@ -19,11 +19,11 @@ ObjectCounter()
 ObjectCounter()
 ObjectCounter()
 
-print(ObjectCounter.num_instances)
+print(ObjectCounter.num_instances) # 4
 
 counter = ObjectCounter()
 # We can access class attribute using either class name(above) or object
-print(counter.num_instances)
+print(counter.num_instances) # 5
 
 # However, if you need to modify a class attribute, then you must use the class itself
 # rather than one of its instances.
