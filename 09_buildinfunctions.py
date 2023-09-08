@@ -13,7 +13,7 @@ print(any(lst)) # False
 d = {0: 'True'}
 print(any(d)) # False, since any checks Keys in case of dictionaries.
 d = {0: True, 10: "Value"}
-print(any(d))
+print(any(d)) # True
 
 # 2. all()
 # Just opposite of any(), The all() function returns True if all elements in the given iterable are true.
@@ -54,15 +54,25 @@ print(ord('A')) # 65
 print("------------------6. enumerate()---------------------")
 lang = ["python", "C#", "Java"]
 enumerate_lang = enumerate(lang)
-print(type(enumerate_lang))
-print(list(enumerate_lang))
+print(type(enumerate_lang)) # <class 'enumerate'>
+print(list(enumerate_lang)) # [(0, 'python'), (1, 'C#'), (2, 'Java')]
+
 # Looping over Enumerate
 grocery = ['bread', 'milk', 'butter']
 for item in enumerate(lang): # Note- not for item in enumerate_lang: -> This is an object, not enumerator
   print(item)
+# (0, 'python')
+# (1, 'C#')
+# (2, 'Java')
+
 print()
 for count, item in enumerate(lang):
   print(count, item)
+# 0 python
+# 1 C#
+# 2 Java
+
+
 
 # map() and filter()
 # Map() and filter() functions are higher-order functions in Python.
@@ -94,7 +104,7 @@ Num3= (4,8,12,16,20)
 Result = map(Add_num, Num1,Num2,Num3)
 print(Result) # <map object at 0X......>
 Output = list(Result)
-print(Output)
+print(Output) # [9, 18, 27, 36, 45]
 
 
 # 8. filter()
@@ -154,4 +164,3 @@ try:
   x = next(x for x, val in enumerate(nums) if val >= 0)
 except StopIteration as e:
   x = 0
-
